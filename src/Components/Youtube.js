@@ -6,7 +6,7 @@ function Youtube() {
   return (
     <section className='youtubeSectionWrapper'>
         <div className='aboutImage'>
-            <img src={YoutubeImg} alt="YoutubeImg" />
+            <img src={YoutubeImg} alt="YoutubeImg" loading="lazy" />
         </div>
         <div className='youtubeContent'>
             <h1>I learn, I Teach</h1>

@@ -342,6 +342,11 @@ img {
   margin: 0 auto;
 }
 
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 
 
 /* End Utils CSS*/

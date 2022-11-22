@@ -31,12 +31,12 @@ function Journey() {
                     <h1>{JourneyList[state].title}</h1>
                     <p>{JourneyList[state].para}</p>
                     <div className='sliderButton'>
-                        <div><img src={Left} alt="LeftArrow" className='arrow' onClick={previous} /></div>
-                        <div><img src={Right} alt="Arrow" className='arrow' onClick={next} /></div>
+                        <div><img src={Left} alt="LeftArrow" className='arrow' onClick={previous} loading="lazy" /></div>
+                        <div><img src={Right} alt="Arrow" className='arrow' onClick={next} loading="lazy" /></div>
                     </div>
                 </div>
                 <div className='aboutImage'>
-                    <img src={JourneyImg} alt="JourneyImg" />
+                    <img src={JourneyImg} alt="JourneyImg" loading="lazy" />
                 </div>
             </div>
         </section>

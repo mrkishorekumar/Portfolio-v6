@@ -8,7 +8,7 @@ function Hero() {
       <div className='heroTitle'>
         <h1>Hi, I'm Kishore</h1>
         <p>am empathetic <span className='underline'>front end developer</span>. I design useful products with keeping on mind accessiblity.</p>
-        <Button bg="white" color="black" link="https://www.linkedin.com/in/mrkishorekumar/" val="Contact" className="mt-3" />
+        <Button bg="white" color="black" link="https://www.linkedin.com/in/mrkishorekumar/" val="Contact" loading="lazy" className="mt-3" />
       </div>
       <div className='heroImg'>
         <img src={Working} alt='Working' />
