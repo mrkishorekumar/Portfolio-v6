@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  /* outline: 1px solid red !important; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: black;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #f1f9f9;
+  border-radius: 0.2rem;
+}
+
+/* Animation */
+@keyframes animateDown {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+
+  40% {
+      transform: translateY(5px);
+  }
+
+  60%{
+      transform: translateY(3px);
+  }
+}
+
+/* End Animation */
+
+/* Hero Section - Home */
+
+.heroWapper {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbarWrapper {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  position: sticky;
+}
+
+.navbarMenuList {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  font-weight: 700;
+}
+
+.navbarMenuList:hover {
+  cursor: pointer;
+}
+
+.navbarMenu {
+  text-decoration: none;
+  color: white;
+}
+
+.heroWrapper {
+  width: 70%;
+  height: 60vh;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroTitle > h1, .aboutContent > h1{
+  font-size: 3rem;
+}
+
+.heroTitle > p {
+  font-size: 1.4rem;
+}
+
+.heroTitle, .heroImg {
+  width: 50%;
+}
+
+
+.bounceEffectWrapper {
+  height: 5vh;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.bounceEffect {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+    animation:animateDown infinite 1.5s;
+}
+
+.bounceEffect:hover {
+  cursor: pointer;
+}
+
+/* End Hero Section - Home */
+
+/* About Section - Home */
+.aboutWapper {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSectionWrapper {
+  width: 70%;
+  height: 80vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.aboutContent, .aboutImage, .youtubeContent {
+  width: 40%;
+}
+
+.aboutContent > p {
+  font-size: 1.2rem;
+}
+
+/* End About Section - Home */
+
+/* Youtube Section -Home */
+
+.youtubeWrapper {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtubeSectionWrapper {
+  width: 70%;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7vh;
+}
+
+.youtubeContent > h1 {
+  font-size: 2rem;
+}
+
+.youtubeContent > p{
+  font-size: 1.2rem;
+}
+
+/* End Youtube Section - Home */
+
+
+/* Journey Section - Home */
+.journeyWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.journeySectionWrapper {
+  height: 90vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.journeyTitle {
+  width: 83%;
+}
+
+.journeyContent {
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.journeyTitle > h1 {
+  font-size: 2rem;
+}
+
+.journeyTitle > p {
+  font-size: 1.2rem;
+}
+
+.sliderButton {
+  margin-top: 2%;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow {
+  width: 10% !important;
+  height: auto;
+  margin: 0 !important;
+  display: block;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* End Journey Section - Home */
+
+
+/* Project Section - Home */
+
+/* End Project Section - Home */
+
+
+
+/* Contact Section - Home */
+
+/* End Contact Section - Home */
+
+
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 800px) {
+  .navbarMenuList, .heroWrapper, .aboutSectionWrapper, .youtubeSectionWrapper, .journeySectionWrapper {
+    width: 90% ;
+  }
+
+  .journeyTitle {
+    width: 100%;
+  }
+
+  .heroTitle {
+    padding-left: 1rem;
+  }
+  .heroTitle > h1, .aboutContent > h1 {
+    font-size: 2.5rem;
+  }
+  .heroWrapper, .aboutSectionWrapper, .youtubeSectionWrapper, .journeyContent, .journeySectionWrapper {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .heroTitle, .heroImg, .aboutContent, .aboutImage, .youtubeContent {
+    width: 100%;
+  }
+
+  .youtubeContent > h1, .journeyTitle > h1 {
+    font-size: 1.5rem;
+  }
+  .youtubeContent > p, .journeyTitle > p{
+    font-size: 1rem;
+  }
+  img {
+    width: 50% !important;
+  }
+}
+
+
+/* End Mobile Responsive */
+
+/* Utils CSS */
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  background-color: aqua;
+  padding: 1.2vh;
+  text-decoration: none;
+  border-radius: 1.1vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  border: 2px solid black;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.btnWrappper {
+  display: flex;
+  gap: 1vh;
+}
+
+.borderWhite {
+  border: 2px solid white !important;
+}
+
+
+img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* End Utils CSS*/
